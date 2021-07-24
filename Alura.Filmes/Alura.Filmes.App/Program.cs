@@ -12,7 +12,6 @@ namespace Alura.Filmes.App
                 {
                     System.Console.WriteLine(ator);
                 }
-
             }
         }
     }
