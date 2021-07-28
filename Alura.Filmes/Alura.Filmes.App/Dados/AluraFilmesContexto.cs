@@ -1,7 +1,5 @@
 ﻿using Alura.Filmes.App.Negocio;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
 
 namespace Alura.Filmes.App.Dados
 {
@@ -9,6 +7,7 @@ namespace Alura.Filmes.App.Dados
     {
         public DbSet<Ator> Atores { get; set; }
         public DbSet<Filme> Filmes { get; internal set; }
+        public DbSet<FilmeAtor> Elenco { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -19,6 +18,7 @@ namespace Alura.Filmes.App.Dados
         {
             modelBuilder.ApplyConfiguration(new AtorConfiguration());
             modelBuilder.ApplyConfiguration(new FilmeConfiguration());
+            modelBuilder.ApplyConfiguration(new FilmeAtorConfiguration());
         }
     }
 }
