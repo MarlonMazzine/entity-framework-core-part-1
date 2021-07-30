@@ -14,6 +14,7 @@ namespace Alura.Filmes.App
             {
                 var filme = contexto.Filmes
                     .Include(f => f.Atores)
+                    .ThenInclude(fa => fa.Ator)
                     .First();
 
                 Console.WriteLine(filme);
@@ -21,7 +22,7 @@ namespace Alura.Filmes.App
 
                 foreach (var item in filme.Atores)
                 {
-                    Console.WriteLine(item);
+                    Console.WriteLine(item.Ator);
                 }
             }
         }
