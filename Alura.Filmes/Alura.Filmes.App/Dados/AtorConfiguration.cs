@@ -10,26 +10,26 @@ namespace Alura.Filmes.App.Dados
         public void Configure(EntityTypeBuilder<Ator> builder)
         {
             builder
-                 .ToTable("actor");
+                .ToTable("actor");
 
             builder
-                 .Property(a => a.Id)
-                 .HasColumnName("actor_id");
+                .Property(a => a.Id)
+                .HasColumnName("actor_id");
 
             builder
-                 .Property(a => a.PrimeiroNome)
-                 .HasColumnName("first_name")
-                 .HasColumnType("varchar(45)")
-                 .IsRequired();
+                .Property(a => a.PrimeiroNome)
+                .HasColumnName("first_name")
+                .HasColumnType("varchar(45)")
+                .IsRequired();
 
             builder
-                 .Property(a => a.UltimoNome)
-                 .HasColumnName("last_name")
-                 .HasColumnType("varchar(45)")
-                 .IsRequired();
+                .Property(a => a.UltimoNome)
+                .HasColumnName("last_name")
+                .HasColumnType("varchar(45)")
+                .IsRequired();
 
             builder
-                 .Property<DateTime>("last_update")
+                .Property<DateTime>("last_update")
                 .HasColumnType("datetime")
                 .HasDefaultValueSql("getdate()")
                 .IsRequired();
@@ -39,7 +39,7 @@ namespace Alura.Filmes.App.Dados
                 .HasName("idx_actor_last_name");
 
             builder
-              .HasAlternateKey(a => new { a.PrimeiroNome, a.UltimoNome });
+                .HasAlternateKey(a => new { a.PrimeiroNome, a.UltimoNome });    
         }
     }
 }

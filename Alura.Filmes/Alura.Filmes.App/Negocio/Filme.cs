@@ -1,7 +1,7 @@
-﻿using Alura.Filmes.App.Negocio;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
-namespace Alura.Filmes.App
+namespace Alura.Filmes.App.Negocio
 {
     public class Filme
     {
@@ -21,7 +21,7 @@ namespace Alura.Filmes.App
 
         public override string ToString()
         {
-            return $"Filme ({Id}): {Titulo} = {AnoLancamento}";
+            return $"Filme ({Id}): {Titulo} - {AnoLancamento}";
         }
     }
 }
