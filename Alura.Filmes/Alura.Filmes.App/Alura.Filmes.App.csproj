@@ -134,6 +134,10 @@
     <Compile Include="Migrations\20210804011543_Idioma.designer.cs">
       <DependentUpon>20210804011543_Idioma.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20210811202159_UniqueAtorPrimeiroUltimoNome.cs" />
+    <Compile Include="Migrations\20210811202159_UniqueAtorPrimeiroUltimoNome.designer.cs">
+      <DependentUpon>20210811202159_UniqueAtorPrimeiroUltimoNome.cs</DependentUpon>
+    </Compile>
     <Compile Include="Negocio\Filme.cs" />
     <Compile Include="Migrations\20210727005252_Inicial.cs" />
     <Compile Include="Migrations\20210727005252_Inicial.designer.cs">
