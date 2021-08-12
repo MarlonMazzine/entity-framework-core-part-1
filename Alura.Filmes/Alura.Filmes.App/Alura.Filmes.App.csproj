@@ -132,6 +132,7 @@
     <Compile Include="Dados\FilmeAtorConfiguration.cs" />
     <Compile Include="Dados\FilmeConfiguration.cs" />
     <Compile Include="Dados\IdiomaConfiguration.cs" />
+    <Compile Include="Extensions\ClassificacaoIndicativaExtensions.cs" />
     <Compile Include="Extensions\DbContextExtensions.cs" />
     <Compile Include="Migrations\20170928150159_Inicial.cs" />
     <Compile Include="Migrations\20170928150159_Inicial.designer.cs">
@@ -161,8 +162,13 @@
     <Compile Include="Migrations\20210811225726_FilmeCheckConstraint.designer.cs">
       <DependentUpon>20210811225726_FilmeCheckConstraint.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20210812103726_Enumerado.cs" />
+    <Compile Include="Migrations\20210812103726_Enumerado.designer.cs">
+      <DependentUpon>20210812103726_Enumerado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AluraFilmesContextoModelSnapshot.cs" />
     <Compile Include="Negocio\Ator.cs" />
+    <Compile Include="Negocio\ClassificacaoIndicativa.cs" />
     <Compile Include="Negocio\Filme.cs" />
     <Compile Include="Negocio\FilmeAtor.cs" />
     <Compile Include="Negocio\Idioma.cs" />
